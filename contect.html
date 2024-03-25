@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="index.html"><img src="accetss/image/logo.png" alt="logo"></a>
+            <div class="nav-links" id="nav-links">
+                <!-- X marks -->
+                <i class="fa-solid fa-xmark icon" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="couses.html">COURSE</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contect.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <!-- its Menu icons -->
+            <i class="fa-solid fa-bars icon " onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </div>
+
+    <section class="location">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497698.7749916886!2d77.3012613!3d12.9544595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1711272761942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home icons"></i>
+                    <span>
+                        <h5>XYZ Read, ABC Building</h5>
+                        <p>Bengalore, Karanata, IN</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone icons"></i>
+                    <span>
+                        <h5>+10123456789</h5>
+                        <p>Monday to Saturday. 10Am to 6Pm</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope icons"></i>
+                    <span>
+                        <h5>info@easytutoralspro.com</h5>
+                        <p>Email us your qurey</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-inf">
+                <form action="form-heandler.php" method="post"> 
+                    <input type="text" name="name" placeholder="Enter your Name">
+                    <input type="email" name="email" placeholder="Enter your Email">
+                    <input type="text" name="subject" placeholder="Enter your Subject">
+                    <textarea name="message" rows="5" placeholder="Message"></textarea>
+                    <button type="submit" class="btn1">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa mollitia animi tempore aliquam, harum dolore commodi! Vitae corrupti, quaerat officia <br> explicabo aut culpa nesciunt enim quibusdam, facere laborum pariatur labore? lo</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i> 
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+           
+            
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Easy Tutorials</p>
+    </section>
+
+     <!-- ---------------------- Javascript for Toggle Menu--------------------->
+     <script>
+        let navLinks = document.getElementById("nav-links");
+
+        function showMenu(){
+            navLinks.style.right = "0"; 
+            navLinks.style.transition = "1s";
+            navLinks.style.zIndex = "2"
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            navLinks.style.transition = "1s";
+            
+        }
+    </script>
+</body>
+</html>
